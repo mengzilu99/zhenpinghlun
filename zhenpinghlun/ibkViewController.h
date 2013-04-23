@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ibkViewController : UIViewController
+@interface ibkViewController : UITableViewController <NSURLConnectionDataDelegate,NSURLConnectionDelegate>
 
 @end

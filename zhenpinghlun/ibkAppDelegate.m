@@ -23,7 +23,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ibkViewController alloc] initWithNibName:@"ibkViewController" bundle:nil] autorelease];
+    self.viewController = [[[ibkViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

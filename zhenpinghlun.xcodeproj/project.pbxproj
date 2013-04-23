@@ -17,7 +17,10 @@
 		0FC858E617263270003A1672 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC858E517263270003A1672 /* Default@2x.png */; };
 		0FC858E817263270003A1672 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC858E717263270003A1672 /* Default-568h@2x.png */; };
 		0FC858EB17263270003A1672 /* ibkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC858EA17263270003A1672 /* ibkViewController.m */; };
-		0FC858EE17263270003A1672 /* ibkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC858EC17263270003A1672 /* ibkViewController.xib */; };
+		0FC858F51726340B003A1672 /* request.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0FC858F41726340B003A1672 /* request.xml */; };
+		0FC858F817263BB7003A1672 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC858F717263BB7003A1672 /* GDataXMLNode.m */; };
+		0FC858FA17263BD8003A1672 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC858F917263BD8003A1672 /* libxml2.dylib */; };
+		0FC858FD17263DFC003A1672 /* RelRewiew.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC858FC17263DFC003A1672 /* RelRewiew.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +39,12 @@
 		0FC858E717263270003A1672 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0FC858E917263270003A1672 /* ibkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ibkViewController.h; sourceTree = "<group>"; };
 		0FC858EA17263270003A1672 /* ibkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ibkViewController.m; sourceTree = "<group>"; };
-		0FC858ED17263270003A1672 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ibkViewController.xib; sourceTree = "<group>"; };
+		0FC858F41726340B003A1672 /* request.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = request.xml; sourceTree = "<group>"; };
+		0FC858F617263BB7003A1672 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		0FC858F717263BB7003A1672 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		0FC858F917263BD8003A1672 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		0FC858FB17263DFC003A1672 /* RelRewiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelRewiew.h; sourceTree = "<group>"; };
+		0FC858FC17263DFC003A1672 /* RelRewiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelRewiew.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC858FA17263BD8003A1672 /* libxml2.dylib in Frameworks */,
 				0FC858D217263270003A1672 /* UIKit.framework in Frameworks */,
 				0FC858D417263270003A1672 /* Foundation.framework in Frameworks */,
 				0FC858D617263270003A1672 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +65,7 @@
 		0FC858C517263270003A1672 = {
 			isa = PBXGroup;
 			children = (
+				0FC858F917263BD8003A1672 /* libxml2.dylib */,
 				0FC858D717263270003A1672 /* zhenpinghlun */,
 				0FC858D017263270003A1672 /* Frameworks */,
 				0FC858CF17263270003A1672 /* Products */,
@@ -83,12 +93,16 @@
 		0FC858D717263270003A1672 /* zhenpinghlun */ = {
 			isa = PBXGroup;
 			children = (
+				0FC858F617263BB7003A1672 /* GDataXMLNode.h */,
+				0FC858F717263BB7003A1672 /* GDataXMLNode.m */,
 				0FC858E017263270003A1672 /* ibkAppDelegate.h */,
 				0FC858E117263270003A1672 /* ibkAppDelegate.m */,
 				0FC858E917263270003A1672 /* ibkViewController.h */,
 				0FC858EA17263270003A1672 /* ibkViewController.m */,
-				0FC858EC17263270003A1672 /* ibkViewController.xib */,
+				0FC858F41726340B003A1672 /* request.xml */,
 				0FC858D817263270003A1672 /* Supporting Files */,
+				0FC858FB17263DFC003A1672 /* RelRewiew.h */,
+				0FC858FC17263DFC003A1672 /* RelRewiew.m */,
 			);
 			path = zhenpinghlun;
 			sourceTree = "<group>";
@@ -163,7 +177,7 @@
 				0FC858E417263270003A1672 /* Default.png in Resources */,
 				0FC858E617263270003A1672 /* Default@2x.png in Resources */,
 				0FC858E817263270003A1672 /* Default-568h@2x.png in Resources */,
-				0FC858EE17263270003A1672 /* ibkViewController.xib in Resources */,
+				0FC858F51726340B003A1672 /* request.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +191,8 @@
 				0FC858DE17263270003A1672 /* main.m in Sources */,
 				0FC858E217263270003A1672 /* ibkAppDelegate.m in Sources */,
 				0FC858EB17263270003A1672 /* ibkViewController.m in Sources */,
+				0FC858F817263BB7003A1672 /* GDataXMLNode.m in Sources */,
+				0FC858FD17263DFC003A1672 /* RelRewiew.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +205,6 @@
 				0FC858DB17263270003A1672 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0FC858EC17263270003A1672 /* ibkViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0FC858ED17263270003A1672 /* en */,
-			);
-			name = ibkViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,6 +269,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zhenpinghlun/zhenpinghlun-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "zhenpinghlun/zhenpinghlun-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -272,6 +281,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zhenpinghlun/zhenpinghlun-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "zhenpinghlun/zhenpinghlun-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
